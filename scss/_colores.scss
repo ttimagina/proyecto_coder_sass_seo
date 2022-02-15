@@ -1,0 +1,78 @@
+// ESTILOS DE COLORES APLICADOS AL SITIO
+
+/*********************
+**estilos de colores**
+*********************/
+
+$white: whitesmoke;
+$verde: rgba(183, 222, 184, 1);
+$rosa: rgba(211, 147, 147, 1);
+$celeste: rgba(153, 179, 209, 1);
+$marron: rgba(88, 64, 64, 1); 
+$black: rgba(39, 50, 39, 1);
+
+
+
+$colores:(
+    branding: $verde,
+    website: $rosa,
+    animation: $celeste,
+    contacto: $marron,
+    negro: $black,
+);
+
+@each $name, $value in $colores {
+    .bg-#{$name}{
+        background-color: $value;
+    }
+}
+
+@each $name, $value in $colores {
+    .color-#{$name}{
+        color: $value;
+    }
+}
+
+
+//* data vieja *//
+.color_white{
+    color: $white;
+}
+
+
+.backgroundVerde{
+    background-color: $verde;
+}
+
+.colorVerde{
+    color: $verde;
+
+}
+
+.backgrounRosa{
+    background-color: $rosa;
+}
+
+.colorRosa{
+    color: $rosa;
+
+}
+
+.backgrounCian{
+    background-color: $celeste;
+}
+
+.colorCian{
+    color: $celeste;
+
+}
+
+.backgrounBrouwn{
+    background-color: $marron;
+
+}
+
+.colorBrouwn{
+    color: $marron;
+
+}

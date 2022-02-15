@@ -1,0 +1,60 @@
+//estilos de tipografias
+
+/************************
+**estilos de tipografias**
+*************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Poiret+One&family=Press+Start+2P&display=swap');
+
+$white: whitesmoke;
+$black: rgba(39, 50, 39, 1);
+
+
+
+main{
+    a{  
+        padding: 0rem 1rem ;
+        text-decoration: none;
+        &:hover{
+            color: $black;
+            text-decoration: none;
+            padding: 0rem 1.5rem ;
+        }
+        &:visited {
+            color: none;
+        }
+    }
+}
+
+
+.titulo_iniciodeseccion{
+    font-size: 6vw;
+    font-family: 'Oswald', sans-serif ;
+}
+
+.texto_iniciodeseccion{
+    font-family:'Oswald', sans-serif;
+    font-weight: 500;
+    color: $white;
+    font-size: 10vw;
+ 
+}
+
+.titulos_notas{
+    font-size:2.5vw ;
+    font-family: 'Oswald', sans-serif ;
+}
+
+.titulos_notas--black{
+    @extend .titulos_notas;
+    color: $black;
+}
+
+.titulos_notas--white{
+    @extend .titulos_notas;
+    color: $white;
+}
+
+.txt_justificado{
+    text-align: justify;
+}

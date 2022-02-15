@@ -1,0 +1,37 @@
+//estilos varios
+/******************
+**estilos varios**
+******************/
+
+.img_logo_head{
+    width: 18vw;
+}
+
+.footer_img{
+    width: 1.2vw;
+    padding: 0.2vw 0 0 0;
+}
+
+.alink{
+    padding: 0rem 1rem ;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+@mixin padding ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;  
+}
+
+.padding-1rem {
+    @include padding(1rem, 1rem)
+}
+
+.padding-2rem {
+    @include padding(2rem, 2rem)
+}
+
+.padding-3rem {
+    @include padding(3rem, 3rem)
+}
