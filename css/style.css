@@ -188,7 +188,7 @@ main a {
   height: 3rem; }
 
 .img_borde_redondo1 {
-  border-radius: 10px; }
+  border-radius: 10%; }
 
 .img_borde_redondo_full {
   border-radius: 50%; }
