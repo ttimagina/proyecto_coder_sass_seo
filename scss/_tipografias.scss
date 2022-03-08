@@ -5,6 +5,7 @@
 *************************/
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Poiret+One&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
 
 $white: whitesmoke;
 $black: rgba(39, 50, 39, 1);
@@ -18,7 +19,7 @@ main{
         &:hover{
             color: $black;
             text-decoration: none;
-            padding: 0rem 1.5rem ;
+            
         }
         &:visited {
             color: none;
@@ -57,4 +58,30 @@ main{
 
 .txt_justificado{
     text-align: justify;
+}
+
+.font_dancing{
+    font-family: 'Dancing Script', cursive ;
+}
+
+.font_oswald{
+    font-family: 'Oswald', sans-serif ;
+}
+
+/*responsive text*/
+/*cellphone*/
+@media (max-width:580px){
+    .titulos_notas{
+        font-size:6vw ;
+        font-family: 'Oswald', sans-serif ;
+    }
+}
+
+/*TABLET*/
+
+@media (min-width:581px) and (max-width:1023px){
+    .titulos_notas{
+        font-size:4vw ;
+        font-family: 'Oswald', sans-serif ;
+    }
 }
