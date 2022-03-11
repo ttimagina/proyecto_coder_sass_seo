@@ -6,11 +6,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Poiret+One&family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 $white: whitesmoke;
 $black: rgba(39, 50, 39, 1);
-
-
 
 main{
     a{  
@@ -25,6 +24,11 @@ main{
             color: none;
         }
     }
+}
+
+p{
+    font-family: 'Quicksand', sans-serif;   
+    font-size: 1.1vw;
 }
 
 
@@ -68,6 +72,11 @@ main{
     font-family: 'Oswald', sans-serif ;
 }
 
+.p--secciones{
+    @extend p;
+    font-size: 1.3vw;
+}
+
 /*responsive text*/
 /*cellphone*/
 @media (max-width:580px){
@@ -77,11 +86,53 @@ main{
     }
 }
 
+@media (max-width:580px){
+    p{
+        font-family: 'Quicksand', sans-serif;   
+        font-size: 3vw;
+    }
+}
+
+@media (max-width:580px){
+    .p--secciones{
+        font-family: 'Quicksand', sans-serif;   
+        font-size: 3vw;
+    }
+}
+
+
 /*TABLET*/
 
 @media (min-width:581px) and (max-width:1023px){
     .titulos_notas{
-        font-size:4vw ;
+        font-size:2vw ;
         font-family: 'Oswald', sans-serif ;
+    }
+}
+
+@media (min-width:581px) and (max-width:1023px){
+    .p--secciones{
+        display:none ;       
+    }
+}
+
+@media (min-width:581px) and (max-width:750px){
+    p{
+        font-family: 'Quicksand', sans-serif;   
+        font-size: 2.5vw;
+    }
+}
+
+@media (min-width:751px) and (max-width:1023px){
+    p{
+        font-family: 'Quicksand', sans-serif;   
+        font-size: 1.5vw;
+    }
+}
+/*desktop*/
+@media (min-width:1024px){
+    p{
+        font-family: 'Quicksand', sans-serif;   
+        font-size: 1.3vw;
     }
 }

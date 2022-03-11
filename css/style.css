@@ -3,6 +3,7 @@
 *************************/
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Poiret+One&family=Press+Start+2P&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 main a {
   padding: 0rem 1rem;
   text-decoration: none; }
@@ -11,6 +12,10 @@ main a {
     text-decoration: none; }
   main a:visited {
     color: none; }
+
+p, .p--secciones {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.1vw; }
 
 .titulo_iniciodeseccion {
   font-size: 6vw;
@@ -41,6 +46,9 @@ main a {
 .font_oswald {
   font-family: 'Oswald', sans-serif; }
 
+.p--secciones {
+  font-size: 1.3vw; }
+
 /*responsive text*/
 /*cellphone*/
 @media (max-width: 580px) {
@@ -48,11 +56,41 @@ main a {
     font-size: 6vw;
     font-family: 'Oswald', sans-serif; } }
 
+@media (max-width: 580px) {
+  p, .p--secciones {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 3vw; } }
+
+@media (max-width: 580px) {
+  .p--secciones {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 3vw; } }
+
 /*TABLET*/
 @media (min-width: 581px) and (max-width: 1023px) {
   .titulos_notas, .titulos_notas--black, .titulos_notas--white {
-    font-size: 4vw;
+    font-size: 2vw;
     font-family: 'Oswald', sans-serif; } }
+
+@media (min-width: 581px) and (max-width: 1023px) {
+  .p--secciones {
+    display: none; } }
+
+@media (min-width: 581px) and (max-width: 750px) {
+  p, .p--secciones {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.5vw; } }
+
+@media (min-width: 751px) and (max-width: 1023px) {
+  p, .p--secciones {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5vw; } }
+
+/*desktop*/
+@media (min-width: 1024px) {
+  p, .p--secciones {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.3vw; } }
 
 /*********************
 **estilos de colores**
@@ -192,3 +230,12 @@ main a {
 
 .img_borde_redondo_full {
   border-radius: 50%; }
+
+.div_altofijo {
+  height: 5vh; }
+
+.altofijo {
+  box-sizing: content-box; }
+
+.flex-end {
+  justify-content: flex-end; }
