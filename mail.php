@@ -72,9 +72,10 @@ echo'
             </div>
         </div>
     <div class="container-fluid d-flex">
-        <h1 clas="font_oswald color-contacto">Gracias por contactarme. ¡Me pondré en contacto contigo lo antes posible!</h1>
-        <p class="back color-contacto">Volver a Navegar <a clas="font_dancing color-contacto" href="index.html">a Navegar</a>.</p>
-        
+      <div class="texto_iniciodeseccion">
+        <h1 class="font_oswald color-contacto">Gracias por contactarme. ¡Me pondré en contacto contigo lo antes posible!</h1><br>
+        <p class="back color-contacto">Volver a Navegar <a class="font_dancing color-contacto" href="index.html">a Navegar</a>.</p>
+      </div>  
     </div>
 
     <!--INCIO DE FOOTER--> 
