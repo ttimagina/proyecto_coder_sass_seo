@@ -231,11 +231,61 @@ p, .p--secciones {
 .img_borde_redondo_full {
   border-radius: 50%; }
 
-.div_altofijo {
-  height: 5vh; }
 
-.altofijo {
-  box-sizing: content-box; }
 
-.flex-end {
-  justify-content: flex-end; }
+/******************
+**estilos mail**
+******************/
+
+
+
+form {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px 0;
+}
+
+input,
+textarea,
+label {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  color: #828282;
+}
+
+input,
+textarea {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #828282;
+}
+
+input[type=submit] {
+  background-color: #545557;
+  padding: 15px 0;
+  color: white;
+  font-size: 18px;
+  border-bottom: none;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+input[type=submit]:hover {
+  background: #FFF;
+  color: #1b1c1e;
+}
+
+input,
+textarea {
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+}
+
+input:focus,
+textarea:focus {
+  outline: 1px solid #828282;
+}
